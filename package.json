@@ -1,0 +1,67 @@
+{
+  "name": "mock2easyCopy",
+  "version": "0.0.1",
+  "main": "./start.js",
+  "scripts": {
+    "watch": "watchify -t brfs public/javascripts/app.js -o public/build/bundle.js -v",
+    "build": "browserify -t brfs  public/javascripts/app.js -o public/build/bundle.js",
+    "util": "browserify -t brfs  public/javascripts/util.js -o public/build/util.js",
+    "start": "npm run watch & nodemon ./bin/www"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "~1.0.0",
+    "brfs": "^1.4.1",
+    "browserify-middleware": "^7.0.0",
+    "colors": "^1.1.2",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "express": "~4.2.0",
+    "insert-css": "^0.2.0",
+    "jade": "~1.3.0",
+    "mkdirp": "^0.5.1",
+    "morgan": "~1.0.0",
+    "node.extend": "^1.1.5",
+    "nodemon": "^1.4.1",
+    "q": "^1.4.1",
+    "static-favicon": "~1.0.0",
+    "underscore": "^1.8.3",
+    "watchify": "^3.4.0",
+    "mockjs": "^0.1.10"
+  },
+  "devDependencies": {
+    "angular": "^1.4.5",
+    "angular-sanitize": "^1.4.5",
+    "angular-translate": "^2.7.2",
+    "angular-ui-bootstrap": "^0.13.4",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4",
+    "json2": "^0.4.0"
+  },
+  "description": "mock2easy 是一款兼mock数据、接口自动化测试、接口地址重定向多功能于一身的工具，暂时提供 grunt、gulp 和 webpack 平台。",
+  "_id": "mock2easy@0.0.6",
+  "_shasum": "2e0a3c040a8888b1bbd22d5e9ddd64ea8cd0982b",
+  "_from": "mock2easy@0.0.6",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "applelihui",
+    "email": "lhui3it@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "applelihui",
+      "email": "lhui3it@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "35661d71945e4ae98a6929c1456b39e2ed1e1bbf",
+    "size": 617804,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/mock2easy/download/mock2easy-0.0.6.tgz"
+  },
+  "directories": {},
+  "publish_time": 1441966098980,
+  "_cnpm_publish_time": 1441966098980,
+  "_resolved": "https://registry.npm.taobao.org/mock2easy/download/mock2easy-0.0.6.tgz"
+}
